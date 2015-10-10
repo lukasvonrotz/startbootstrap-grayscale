@@ -11,6 +11,10 @@ body {
     color: #fff;
     background-color: #000;
 }
+img.center {
+	display: block;
+    margin: 0 auto;
+}
 
 html {
     width: 100%;
