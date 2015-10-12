@@ -36,11 +36,18 @@
 			var newheight = (newwidth/1.68) + 'px';
 			document.getElementById(id).height = newheight;
 		}
+		function english(){		
+			document.getElementById("video-death").innerHTML = "Through the 'Death Is In This Land' videoclip we would like to highlight that the current situation in Iraq and Syria is not only happening on TV screens and in newspapers. To the people there, this is their daily, brutal reality. Through our music, we try, as far as possible, to enter into this reality - to really hear and see what is happening in these far away lands. We sing these lyrics to, at least in some small way, be with these people in the Middle East in thought and compassion. The song can be downloaded free of charge <a href='www.noisetrade.com/trainwood/death-is-in-this-land-single'>here</a>.";
+		}
+		function german(){
+			document.getElementById("video-death").innerHTML = "Mit dem Videoclip „Death Is In This Land“ wollen wir ins Gedächtnis rufen, dass die aktuellen Geschehnisse in Irak und Syrien sich nicht nur auf den TV-Bildschirmen und in Zeitungen abspielen. Für andere Menschen ist das die tägliche, brutale Realität. Mit Hilfe unserer Musik versuchen wir, so gut es geht, wirklich und von innen her zu hören und zu sehen, was da weit weg von uns passiert. Wir singen diese Zeilen, um mit unseren Gedanken und unserem Mitgefühl ein wenig bei den Menschen im Nahen Osten zu sein. Der Song zum Videoclip kann <a href='www.noisetrade.com/trainwood/death-is-in-this-land-single'>hier</a> gratis heruntergeladen werden.";
+
+		}
 	</script>
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onLoad="german();">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -54,7 +61,7 @@
                 </a>
             </div>
 			<div  style="float: right; height: 50px; line-height: 50px; margin-left: 75px;" class="navbar-main-collapse navbar-collapse">
-				<a href="#">DE </a>|<a href="#"> EN</a>
+				<a href="javascript:german();">DE </a>|<a href="javascript:english();"> EN</a>
 			</div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="navbar-collapse navbar-main-collapse">
@@ -94,15 +101,28 @@
     <header class="intro">
         <div class="intro-body">
             <div class="container">
-			<img src="img/banner.png" alt="logo" width="100%">
+				<img src="img/banner.png" alt="logo" width="100%">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <p class="intro-text" style="margin-top: 80px; color: black;">New Single 2015</p>
+                        <p class="intro-text" style="margin-top: 50px;">New Single 2015</p>
+						</br>Available on</br></br>
+						<ul class="list-inline banner-social-buttons">
+							<li>
+								<a href="https://itunes.apple.com/us/artist/trainwood" class="btn btn-default-title btn-lg"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
+							</li>
+							<li>
+								<a href="https://play.spotify.com/artist/trainwood" class="btn btn-default-title btn-lg"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
+							</li>
+							<li>
+								<a href="https://soundcloud.com/trainwood" class="btn btn-default-title btn-lg"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">SoundCloud</span></a>
+							</li>
+						</ul>
                         <a href="#video" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
-                </div>
+					<div style="color: white; position: absolute; bottom: 20px; font-size: 14px;""><a href="www.samispage.ch" style="color: white;">&copy; Fotografie: Samuel Bütler</a></div>                
+				</div>		
             </div>
         </div>
     </header>
@@ -110,24 +130,33 @@
     <!-- Video Section -->
     <section id="video" class="container content-section text-center">
         <div class="row">
-		    <div class="col-lg-12"">
+		    <div class="col-lg-12">
 				<h2>Video</h2>
 			</div>
-			<div class="col-lg-6" style="background-color: gray; padding: 10px;">
-				<p>
-				<iframe src="https://www.youtube.com/embed/baByqBb7elo" width="100%" id="iframe-remember" marginheight="0" frameborder="0" onLoad="autoResize('iframe-remember');"></iframe>				
-				</p>
-				<h3>Remember</h3>
-				<p>In Gedenken an 'Länzi'</p>
-				<p>&#8224; 01. Januar 1960 - 01. Januar 2000</p>
-				<p>Remember the times we could enjoy, your humor and all your lovely deeds. Remember the fun we had that day, when we built castles at the beach. Remember the gleaming in your face, when you were in your beloved nature. Remember your favourable way, which let us look up to you. Thank you for everything!</p>
+			<div class="col-lg-12">
+				<div class="col-lg-6" style="padding: 10px;">				
+					<p>
+					<iframe src="https://www.youtube.com/embed/baByqBb7elo" width="100%" id="iframe-remember" marginheight="0" frameborder="0" onLoad="autoResize('iframe-remember');"></iframe>				
+					</p>
+				</div>				
+				<div class="col-lg-6" style="padding: 10px;">
+					<h3>Remember</h3>
+					<p>In Gedenken an 'Länzi'</p>
+					&#8224; 01. Januar 1960 - 01. Januar 2000</br></br>
+				<p id="video-remember">Remember the times we could enjoy, your humor and all your lovely deeds. Remember the fun we had that day, when we built castles at the beach. Remember the gleaming in your face, when you were in your beloved nature. Remember your favourable way, which let us look up to you. Thank you for everything!</p>
+
+				</div>
 			</div>
-			<div class="col-lg-6" style="padding: 10px;">
-				<p>
-				<iframe src="http://www.youtube.com/embed/LSdCrJVjutY" width="100%" id="iframe-death" marginheight="0" frameborder="0" onLoad="autoResize('iframe-death');"></iframe>
-				</p>
-				<h3>Death Is In This Land</h3>
-				<p>Mit dem Videoclip „Death Is In This Land“ wollen wir ins Gedächtnis rufen, dass die aktuellen Geschehnisse in Irak und Syrien sich nicht nur auf den TV-Bildschirmen und in Zeitungen abspielen. Für andere Menschen ist das die tägliche, brutale Realität. Mit Hilfe unserer Musik versuchen wir, so gut es geht, wirklich und von innen her zu hören und zu sehen, was da weit weg von uns passiert. Wir singen diese Zeilen, um mit unseren Gedanken und unserem Mitgefühl ein wenig bei den Menschen im Nahen Osten zu sein. Der Song zum Videoclip kann <a href="www.noisetrade.com/trainwood/death-is-in-this-land-single">hier</a> gratis heruntergeladen werden. </p>
+			<div class="col-lg-12" style="margin-top: 40px;">
+				<div class="col-lg-6" style="padding: 10px;">
+					<p>
+					<iframe src="http://www.youtube.com/embed/LSdCrJVjutY" width="100%" id="iframe-death" marginheight="0" frameborder="0" onLoad="autoResize('iframe-death');"></iframe>
+					</p>
+				</div>
+				<div class="col-lg-6" style="padding: 10px;">
+					<h3>Death Is In This Land</h3>
+					<p id="video-death">Mit dem Videoclip „Death Is In This Land“ wollen wir ins Gedächtnis rufen, dass die aktuellen Geschehnisse in Irak und Syrien sich nicht nur auf den TV-Bildschirmen und in Zeitungen abspielen. Für andere Menschen ist das die tägliche, brutale Realität. Mit Hilfe unserer Musik versuchen wir, so gut es geht, wirklich und von innen her zu hören und zu sehen, was da weit weg von uns passiert. Wir singen diese Zeilen, um mit unseren Gedanken und unserem Mitgefühl ein wenig bei den Menschen im Nahen Osten zu sein. Der Song zum Videoclip kann <a href="www.noisetrade.com/trainwood/death-is-in-this-land-single">hier</a> gratis heruntergeladen werden. </p>
+				</div>
 			</div>
 			</br>
 			<div class="col-lg-12" style="margin-top: 50px">
@@ -143,7 +172,7 @@
 
     <!-- Music Section -->
     <section id="music" class="content-section text-center">
-		<div class="download-section">
+		<div class="music-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12"">
@@ -151,11 +180,10 @@
 					</div>
 					<div class="col-lg-4">
 						<p><iframe style="width: 100%;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/175925063&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" frameborder="no" scrolling="no" width="100%" height="200px"></iframe></p>
-						<a href="www.noisetrade.com/trainwood/death-is-in-this-land-single">Download 'Remember'</a>
 					</div>
 					<div class="col-lg-4">
 						<p><iframe style="width: 100%;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/175925063&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" frameborder="no" scrolling="no" width="100%" height="200px"></iframe></p>
-						<a href="www.noisetrade.com/trainwood/death-is-in-this-land-single">Download 'Death Is In This Land'</a>
+						<a class ="btn btn-default btn-sm" href="www.noisetrade.com/trainwood/death-is-in-this-land-single">Download 'Death Is In This Land'</a>
 					</div>
 					<div class="col-lg-4">
 						<p><iframe style="width: 100%;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/175925063&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" frameborder="no" scrolling="no" width="100%" height="200px"></iframe></p></div>
@@ -163,13 +191,13 @@
 						</br></br><p>For more sound, follow us:</p>
 						<ul class="list-inline banner-social-buttons">
 							<li>
+								<a href="https://itunes.apple.com/us/artist/trainwood" class="btn btn-default btn-lg"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
+							</li>
+							<li>
 								<a href="https://soundcloud.com/trainwood" class="btn btn-default btn-lg"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">SoundCloud</span></a>
 							</li>
 							<li>
 								<a href="https://play.spotify.com/artist/trainwood" class="btn btn-default btn-lg"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
-							</li>
-							<li>
-								<a href="https://itunes.apple.com/us/artist/trainwood" class="btn btn-default btn-lg"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
 							</li>
 						</ul>
 					</div>
@@ -182,18 +210,18 @@
 	<section id="live" class="container content-section text-center">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Trainwood Live</h2>
-                    <p>Momentan keine Auftritte geplant. </br>Schreib uns auf <a href="mailto:band@trainwood.com">band@trainwood.com</a> um eine Anfrage zu schicken.</p>
+                    <p>Momentan sind keine Auftritte geplant. </br>Schreib uns auf <a href="mailto:band@trainwood.com">band@trainwood.com</a> um eine Anfrage zu schicken.</p>
                 </div>
     </section>
 	
  <!-- Band Section -->
 	<section id="band" class="content-section text-center">
 			<h2>About Trainwood</h2>
-			<img src="img/trainwood_logo_small.png" alt="logo" height="100" width="100%">
-			<p style="margin-top: 20px;">v.l.n.r: Michael von Rotz (Vocals), Lukas von Rotz (Keys), Dominik Omlin (Drums), Adrian Gander (Bass)</p>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12" style="margin-top: 50px;">
+						<img src="img/band.jpg" alt="logo" width="100%">
+						<p style="margin-top: 20px;">v.l.n.r: Lukas von Rotz (Keys), Dominik Omlin (Drums), Michael von Rotz (Vocals), Adrian Gander (Bass)</p>
 						<p>Anfangs 2012. Michael & Lukas von Rotz legen einige Kilometer zurück, um sich mit Alfred Perner den Kopf über Musik zu zerbrechen. Sie feilen teilweise bis tief in die Nacht an ihrem Sound, bis die ersten Songs da sind. Zufrieden, dass das Zeug schon mal ganz gut klingt und sich die Sache also gelohnt zu haben scheint, bekommen sie Verstärkung von Dominik Omlin. Nun kommt Trainwood ins Rollen. Die Begeisterung der Vier für ihre Musik bringt sie näher zusammen und es folgen erste Konzerte in der Schweiz und Deutschland.</p>
 						<p>2013 fordern Krankheit, ein plötzlicher Todesfall im engeren Verwandtenkreis und auch innere Konflikte die Band jedoch enorm heraus. Zudem fehlt es dem Sound immer noch an einem weiteren Bandmitglied, das sich einfach nicht finden lassen will. Aber gerade in dieser Schwäche erfährt Trainwood, so paradox es klingt, Stärke, was fortan ihren Lifestyle prägen soll: „Trust and never give up!“</p>
 						<p>Herbst 2014. Lorenz Imfeld stosst zur Band und ziemlich schnell fand man im Tonstudio und vor der Kamera wieder. Das Resultat ist der Videoclip von „Death is in this land“, worin die aktuelle Lage in Irak und Syrien zur Sprache kommt. Mit mittlerweile über 2500 Aufrufen auf YouTube ist Trainwood sehr stolz, so viele Leute mit dem Song erreicht und hoffentlich auch berührt zu haben.</p>
@@ -208,7 +236,7 @@
 	<!-- Pictures Section -->	
 	<section id="pictures" class="content-section text-center">
             <div class="container">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-12">
                     <h2>Pictures</h2>
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 					  <!-- Indicators -->
@@ -222,6 +250,13 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" role="listbox">
 						<div class="item active">
+						  <img src="img/gallery/gallery00.jpg" alt="Chania">
+						  <div class="carousel-caption">
+							<h4>Making Of 'Death Is In This Land'</h4>
+						  </div>
+						</div>
+						
+						<div class="item">
 						  <img src="img/gallery/gallery01.jpg" alt="Chania">
 						  <div class="carousel-caption">
 							<h4>Making Of 'Death Is In This Land'</h4>
@@ -267,7 +302,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="content-section text-center">
-		<div class="download-section">
+		<div class="contact-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
