@@ -331,7 +331,7 @@ a:focus {
 .btn-default-title {
     border: 1px solid white;
     color: white;
-    background-color: rgba(44, 80, 116, 0.6);
+    background-color: rgba(44, 80, 116, 0.4);
 }
 
 .btn-default:hover,
