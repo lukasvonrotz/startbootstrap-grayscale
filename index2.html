@@ -30,6 +30,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script src="js/languages.js"></script>
+	<script>
+		function autoResize(id){
+			var newwidth = document.getElementById(id).offsetWidth;
+			var newheight = (newwidth/1.68) + 'px';
+			document.getElementById(id).height = newheight;
+		}
+	</script>
 
 
 </head>
@@ -88,23 +95,23 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2" style="margin-top: 40px;">
                         <p class="intro-text">New Single 2015</p>
-						</br>Available on</br></br>
+						<br>Available on<br><br>
 						<ul class="list-inline banner-social-buttons">
 							<li>
-								<a href="https://itunes.apple.com/us/artist/trainwood" class="btn btn-default-title btn-lg"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
+								<a href="https://itunes.apple.com/us/artist/trainwood" target="_blank" class="btn btn-default-title btn-lg"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
 							</li>
 							<li>
-								<a href="https://play.spotify.com/artist/trainwood" class="btn btn-default-title btn-lg"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
+								<a href="https://play.spotify.com/artist/trainwood" target="_blank" class="btn btn-default-title btn-lg"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
 							</li>
 							<li>
-								<a href="https://soundcloud.com/trainwood" class="btn btn-default-title btn-lg"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">SoundCloud</span></a>
+								<a href="https://soundcloud.com/trainwood" target="_blank" class="btn btn-default-title btn-lg"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">SoundCloud</span></a>
 							</li>
 						</ul>
                         <a href="#video" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
-					<div class="col-md-12" style="color: white; font-size: 11px; text-align: left; margin-top: 80px;"><a href="www.samispage.ch" style="color: white;">&copy; Pictures: Samuel Büttler</a></div>         
+					<div class="col-md-12" style="color: white; font-size: 11px; text-align: left; margin-top: 80px;"><a href="http://www.samispage.ch" target="_blank" style="color: white;">&copy; Pictures: Samuel Büttler</a></div>         
 				</div>		
             </div>
         </div>
@@ -124,9 +131,9 @@
 				</div>				
 				<div class="col-lg-6" style="padding: 10px;">
 					<h3>Remember</h3>
-					<a href="javascript:germanRemember();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishRemember();"> EN</a></br></br><p id="video-remember1">In Gedenken an 'Länzi'</p>
-					<span id="video-remember2">&#8224; 01. Januar 1960 - 01. Januar 2000</span></br></br>
-					<p id="video-remember3">Wir erinnern uns an deine gutmütige Art, an deinen Humor, an die vielen schönen Momente welche wir mit dir verbringen durften.</br>We wanna thank you for everything.<br></br><a class ='btn btn-default btn-sm' href='www.noisetrade.com/trainwood/death-is-in-this-land-single'>Bestellung CD (Single)</a></br></p>
+					<a href="javascript:germanRemember();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishRemember();"> EN</a><br><br><p id="video-remember1">In Gedenken an 'Länzi'</p>
+					<span id="video-remember2">&#8224; 15. Oktober 1959 - 19. November 2012</span><br><br>
+					<p id="video-remember3">Wir erinnern uns an deine gutmütige Art, an deinen Humor, an die vielen schönen Momente welche wir mit dir verbringen durften.<br>We wanna thank you for everything.<br><br><a class ='btn btn-default btn-sm' href='http://www.noisetrade.com/trainwood/death-is-in-this-land-single'  target="_blank">Bestellung CD (Single)</a><br></p>
 				</div>
 			</div>
 			<div class="col-lg-12" style="margin-top: 40px;">
@@ -137,16 +144,19 @@
 				</div>
 				<div class="col-lg-6" style="padding: 10px;">
 					<h3>Death Is In This Land</h3>
-					<a href="javascript:germanDeath();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishDeath();"> EN</a></br></br><p id="video-death">Mit dem Videoclip „Death Is In This Land“ wollen wir ins Gedächtnis rufen, dass die aktuellen Geschehnisse in Irak und Syrien sich nicht nur auf den TV-Bildschirmen und in Zeitungen abspielen. Für andere Menschen ist das die tägliche, brutale Realität. Mit Hilfe unserer Musik versuchen wir, so gut es geht, wirklich und von innen her zu hören und zu sehen, was da weit weg von uns passiert. Wir singen diese Zeilen, um mit unseren Gedanken und unserem Mitgefühl ein wenig bei den Menschen im Nahen Osten zu sein. Der Song zum Videoclip kann <a href="www.noisetrade.com/trainwood/death-is-in-this-land-single">hier</a> gratis heruntergeladen werden. </p>
+					<a href="javascript:germanDeath();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishDeath();"> EN</a><br><br><p id="video-death">Mit dem Videoclip „Death Is In This Land“ wollen wir ins Gedächtnis rufen, dass die aktuellen Geschehnisse in Irak und Syrien sich nicht nur auf den TV-Bildschirmen und in Zeitungen abspielen. Für andere Menschen ist das die tägliche, brutale Realität. Mit Hilfe unserer Musik versuchen wir, so gut es geht, wirklich und von innen her zu hören und zu sehen, was da weit weg von uns passiert. Wir singen diese Zeilen, um mit unseren Gedanken und unserem Mitgefühl ein wenig bei den Menschen im Nahen Osten zu sein. Der Song zum Videoclip kann <a href="http://www.noisetrade.com/trainwood/death-is-in-this-land-single" target="_blank">hier</a> gratis heruntergeladen werden. </p>
 				</div>
 			</div>
-			</br>
+			<br>
 			<div class="col-lg-12" style="margin-top: 50px">
 				<p>For more videos, follow us:</p>
 				<ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://youtube.com/trainwoodmusic" class="btn btn-default btn-md"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
+                        <a href="https://youtube.com/trainwoodmusic" target="_blank" class="btn btn-default btn-md"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
                     </li>
+					<li>
+						<a href="https://facebook.com/trainwood" target="_blank" class="btn btn-default btn-md"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+					</li>
                 </ul>
 			</div>
 		</div>
@@ -161,26 +171,27 @@
 						<h2>Music</h2>
 					</div>
 					<div class="col-lg-4">
-						<p><iframe style="width: 100%;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/175925063&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" frameborder="no" scrolling="no" width="100%" height="200px"></iframe></p>
-						<a class ="btn btn-default btn-sm" href="www.noisetrade.com/trainwood/death-is-in-this-land-single">Order CD (Single)</a></br></br>
+						<p><iframe style="width: 100%;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/93109375&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" frameborder="no" scrolling="no" width="100%" height="200px"></iframe></p>
+						<a class ="btn btn-default btn-sm" href="www.noisetrade.com/trainwood/death-is-in-this-land-single">Order CD (Single)</a><br><br>
 					</div>
 					<div class="col-lg-4">
 						<p><iframe style="width: 100%;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/175925063&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" frameborder="no" scrolling="no" width="100%" height="200px"></iframe></p>
-						<a class ="btn btn-default btn-sm" href="www.noisetrade.com/trainwood/death-is-in-this-land-single">Download 'Death Is In This Land'</a></br></br>
+						<a class ="btn btn-default btn-sm" href="www.noisetrade.com/trainwood/death-is-in-this-land-single">Download 'Death Is In This Land'</a><br><br>
 					</div>
 					<div class="col-lg-4">
-						<p><iframe style="width: 100%;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/175925063&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" frameborder="no" scrolling="no" width="100%" height="200px"></iframe></p></div>
-					<div class="col-lg-12"">
-						</br></br><p>Listen to and follow us:</p>
+						<p><iframe style="width: 100%;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/93109375&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" frameborder="no" scrolling="no" width="100%" height="200px"></iframe></p>
+					</div>
+					<div class="col-lg-12">
+						<br><br><p>Listen to and follow us:</p>
 						<ul class="list-inline banner-social-buttons">
 							<li>
-								<a href="https://itunes.apple.com/us/artist/trainwood" class="btn btn-default btn-md"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
+								<a href="https://itunes.apple.com/us/artist/trainwood" target="_blank" class="btn btn-default btn-md"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
 							</li>
 							<li>
-								<a href="https://soundcloud.com/trainwood" class="btn btn-default btn-md"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">SoundCloud</span></a>
+								<a href="https://soundcloud.com/trainwood" target="_blank" class="btn btn-default btn-md"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">SoundCloud</span></a>
 							</li>
 							<li>
-								<a href="https://play.spotify.com/artist/trainwood" class="btn btn-default btn-md"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
+								<a href="https://play.spotify.com/artist/trainwood" target="_blank" class="btn btn-default btn-md"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
 							</li>
 						</ul>
 					</div>
@@ -193,8 +204,8 @@
 	<section id="live" class="container content-section text-center">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Trainwood Live</h2>
-					<a href="javascript:germanLive();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishLive();"> EN</a></br></br>
-                    <p id="live1">Momentan sind keine Auftritte geplant. </br>Schreib uns auf <a href="mailto:band@trainwood.com">band@trainwood.com</a> um eine Anfrage zu schicken.</p>
+					<a href="javascript:germanLive();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishLive();"> EN</a><br><br>
+                    <p id="live1">Momentan sind keine Auftritte geplant. <br>Schreib uns auf <a href="mailto:band@trainwood.com" target="_blank">band@trainwood.com</a> um eine Anfrage zu schicken.</p>
                 </div>
     </section>
 	
@@ -206,7 +217,7 @@
 					<div class="col-lg-12" style="margin-top: 50px;">
 						<img src="img/band.jpg" alt="logo" width="100%">
 						<p style="margin-top: 20px;">v.l.n.r: Lukas von Rotz (Keys), Dominik Omlin (Drums), Michael von Rotz (Vocals), Adrian Gander (Bass)</p>
-						<a href="javascript:germanBand();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishBand();"> EN</a></br></br>
+						<a href="javascript:germanBand();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishBand();"> EN</a><br><br>
 						<p id="band1">Anfangs 2012. Michael & Lukas von Rotz legen einige Kilometer zurück, um sich mit Alfred Perner den Kopf über Musik zu zerbrechen. Sie feilen teilweise bis tief in die Nacht an ihrem Sound, bis die ersten Songs da sind. Zufrieden, dass das Zeug schon mal ganz gut klingt und sich die Sache also gelohnt zu haben scheint, bekommen sie Verstärkung von Dominik Omlin. Nun kommt Trainwood ins Rollen. Die Begeisterung der Vier für ihre Musik bringt sie näher zusammen und es folgen erste Konzerte in der Schweiz und Deutschland.</p>
 						<p id="band2">2013 fordern Krankheit, ein plötzlicher Todesfall im engeren Verwandtenkreis und auch innere Konflikte die Band jedoch enorm heraus. Zudem fehlt es dem Sound immer noch an einem weiteren Bandmitglied, das sich einfach nicht finden lassen will. Aber gerade in dieser Schwäche erfährt Trainwood, so paradox es klingt, Stärke, was fortan ihren Lifestyle prägen soll: „Trust and never give up!“</p>
 						<p id="band3">Herbst 2014. Lorenz Imfeld stosst zur Band und ziemlich schnell fand man im Tonstudio und vor der Kamera wieder. Das Resultat ist der Videoclip von „Death is in this land“, worin die aktuelle Lage in Irak und Syrien zur Sprache kommt. Mit mittlerweile über 2500 Aufrufen auf YouTube ist Trainwood sehr stolz, so viele Leute mit dem Song erreicht und hoffentlich auch berührt zu haben.</p>
@@ -286,31 +297,31 @@
 	
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
+    <section id="contact" class="content-section text-center" style="margin-top: 100px;">
 		<div class="contact-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1">
 						<h2>Contact Trainwood</h2>
-						<a href="javascript:germanContact();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishContact();"> EN</a></br></br>
+						<a href="javascript:germanContact();">DE </a><span style="color: #2C5074;">|</span><a href="javascript:englishContact();"> EN</a><br><br>
 						<p id="contact1">Bestelle eine CD, gib uns Rückmeldungen über unsere Musik oder schreibe uns eine Auftrittsanfrage:</p>
-						<p><a href="mailto:band@trainwood.com">band@trainwood.com</a></p>
+						<p><a href="mailto:band@trainwood.com" target="_blank">band@trainwood.com</a></p>
 						<p id="contact2">Folge uns auf:</p>
 						<ul class="list-inline banner-social-buttons">
 							<li>
-								<a href="https://facebook.com/trainwood" class="btn btn-default btn-md"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+								<a href="https://facebook.com/trainwood" target="_blank" class="btn btn-default btn-md"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
 							</li>
 							<li>
-								<a href="https://youtube.com/trainwoodmusic" class="btn btn-default btn-md"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a>
+								<a href="https://youtube.com/trainwoodmusic" target="_blank" class="btn btn-default btn-md"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a>
 							</li>
 							<li>
-								<a href="https://play.spotify.com/artist/trainwood" class="btn btn-default btn-md"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
+								<a href="https://play.spotify.com/artist/trainwood" target="_blank" class="btn btn-default btn-md"><i class="fa fa-spotify fa-fw"></i> <span class="network-name">Spotify</span></a>
 							</li>
 							<li>
-								<a href="https://soundcloud.com/trainwood" class="btn btn-default btn-md"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">SoundCloud</span></a>
+								<a href="https://soundcloud.com/trainwood" target="_blank" class="btn btn-default btn-md"><i class="fa fa-soundcloud fa-fw"></i> <span class="network-name">SoundCloud</span></a>
 							</li>
 							<li>
-								<a href="https://itunes.apple.com/us/artist/trainwood" class="btn btn-default btn-md"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
+								<a href="https://itunes.apple.com/us/artist/trainwood" target="_blank" class="btn btn-default btn-md"><i class="fa fa-music fa-fw"></i> <span class="network-name">iTunes</span></a>
 							</li>
 						</ul>
 					</div>
