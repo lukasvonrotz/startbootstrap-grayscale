@@ -41,7 +41,7 @@ h6 {
 }
 
 h3 {
-   color: #4E89C5;
+   color: #2C5074;
 }
 
 p {
@@ -329,29 +329,29 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #4E89C5;
+    border: 1px solid #2C5074;
     color: white;
-    background-color: rgba(78, 137, 197, 0.4);
+    background-color: rgba(44, 80, 116, 0.4);
 }
 .btn-default-title {
     border: 1px solid white;
     color: white;
-    background-color: rgba(78, 137, 197, 0.4);
+    background-color: rgba(44, 80, 116, 0.4);
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid ;
+    border: 1px solid #2C5074;
     outline: 0;
     color: white;
-    background-color: #4E89C5;
+    background-color: #2C5074;
 }
 .btn-default-title:hover,
 .btn-default-title:focus {
     border: 1px solid white;
     outline: 0;
     color: white;
-    background-color: #4E89C5;
+    background-color: #2C5074;
 }
 
 ul.banner-social-buttons {
