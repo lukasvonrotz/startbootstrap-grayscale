@@ -4,6 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+    font-family: trainwood_font;
+    src: local(trainwood_font), url('../fonts/akzidenz-grotesk-be-condensed.ttf') format('truetype');
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -11,10 +16,9 @@ body {
     color: #fff;
     background-color: #000;
 }
-
 img.center {
 	display: block;
-    margin: 0 auto;
+    	margin: 0 auto;
 }
 
 html {
@@ -33,10 +37,11 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+
 }
 
 h3 {
-   color: #549DE2;
+   color: #4E89C5;
 }
 
 p {
@@ -44,6 +49,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
@@ -53,7 +59,7 @@ p {
 }
 
 a {
-    color: #549DE2;
+    color: #2C5074;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -62,7 +68,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #549DE2;;
+    color: #2C5074;
 }
 
 .light {
@@ -144,7 +150,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: #4E89C5;
     }
 }
 
@@ -187,8 +193,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
-    }
+    font-size: 26px;
 }
 
 .btn-circle {
@@ -324,17 +329,29 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #549DE2;
-    color: #549DE2;
-    background-color: rgba(44, 80, 116, 0.4);
+    border: 1px solid #4E89C5;
+    color: white;
+    background-color: rgba(78, 137, 197, 0.4);
+}
+.btn-default-title {
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(78, 137, 197, 0.4);
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #549DE2;
+    border: 1px solid ;
     outline: 0;
-    color: #000;
-    background-color: #549DE2;
+    color: white;
+    background-color: #4E89C5;
+}
+.btn-default-title:hover,
+.btn-default-title:focus {
+    border: 1px solid white;
+    outline: 0;
+    color: white;
+    background-color: #4E89C5;
 }
 
 ul.banner-social-buttons {
